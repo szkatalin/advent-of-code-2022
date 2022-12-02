@@ -1,0 +1,31 @@
+{
+  "name": "advent-of-code-2022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon -e ts -w ./day-1 -x npm run watch:serve",
+    "watch:serve": "ts-node day-1/solution.ts --trace-warnings"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szkatalin/advent-of-code-2022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/szkatalin/advent-of-code-2022/issues"
+  },
+  "homepage": "https://github.com/szkatalin/advent-of-code-2022#readme",
+  "dependencies": {
+    "prettier": "^2.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.11",
+    "node-fetch": "^2.6.6",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.2"
+  }
+}
