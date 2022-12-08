@@ -15,6 +15,21 @@ export class Round {
   ally: HandShape;
 }
 
+export const handShapeConfig: { [key: string]: HandShape } = {
+  ["A"]: HandShape.ROCK,
+  ["X"]: HandShape.ROCK,
+  ["B"]: HandShape.PAPER,
+  ["Y"]: HandShape.PAPER,
+  ["C"]: HandShape.SCISSORS,
+  ["Z"]: HandShape.SCISSORS,
+};
+
+export const outcomeConfig: { [key: string]: Outcome } = {
+  ["X"]: Outcome.LOST,
+  ["Y"]: Outcome.DRAW,
+  ["Z"]: Outcome.WIN,
+};
+
 export const scoreTable: { [key: string]: number } = {
   [HandShape.ROCK]: 1,
   [HandShape.PAPER]: 2,
