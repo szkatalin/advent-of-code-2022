@@ -14,11 +14,11 @@ Since you can't be sure if the Elf is trying to help you or trick you, you shoul
 
 For example, suppose you were given the following strategy guide:
 
-|     |     |
-|-----|-----|
-| A   | X   |
-| B   | Y   |
-| C   | Z   |
+| Opponent | Me  |
+|----------|-----|
+| A        | X   |
+| B        | Y   |
+| C        | Z   |
 
 This strategy guide predicts and recommends the following:
 
