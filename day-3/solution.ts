@@ -22,7 +22,7 @@ const main = () => {
           for (let j = 0; j < second.length && !exit; j++) {
             if (first[i] === second[j]) {
               alphabet = first[i];
-              exit=true;
+              exit = true;
             }
           }
         }
@@ -32,6 +32,22 @@ const main = () => {
       .reduce((a, c) => a + c, 0);
 
     console.log(value);
+
+    let commons = [];
+    for (let i = 0; i < data.length; i += 3) {
+      commons.push(
+        data[i]
+          .split("")
+          .filter((a) => data[i + 1].split("").some((b) => b === a))
+          .filter((c) => data[i + 2].split("").some((d) => d === c))[0]
+      );
+    }
+
+    console.log(
+      commons
+        .map((a) => abc.split("").findIndex((v) => v === a) + 1)
+        .reduce((a, c) => a + c, 0)
+    );
   });
 };
 
