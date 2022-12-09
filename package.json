@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "nodemon -e ts -w ./day-2 -x npm run watch:serve",
-    "watch:serve": "ts-node day-2/solution.ts --trace-warnings"
+    "watch": "nodemon -e ts -w ./day-3 -x npm run watch:serve",
+    "watch:serve": "ts-node day-3/solution.ts --trace-warnings"
   },
   "repository": {
     "type": "git",
