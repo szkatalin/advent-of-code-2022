@@ -4,7 +4,7 @@ const abc = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 export const readInputFile = async (): Promise<string[]> =>
   await fs.readFile("day-3/input.txt", "utf8").then((data) => {
-    return data.split(/\n/g).map((v) => v);
+    return data.split(/\n/g);
   });
 
 const main = () => {
